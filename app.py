@@ -1,8 +1,7 @@
 from flask import Flask
 app = Flask(__name__)
 
-# Aapka Monetag Direct Link
-DIRECT_LINK = "https://omg10.com/4/11836807"
+
 
 @app.route('/')
 def home():
