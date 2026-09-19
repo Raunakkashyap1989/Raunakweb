@@ -76,7 +76,7 @@ input{padding:12px;width:80%;border-radius:8px;border:1px solid #ccc;margin:10px
 <script>
 function buy(plan){
   alert(plan + " Buy Now!");
-  window.open("https://wa.me/919999999999?text=Mujhe "+plan+" chahiye","_blank");
+  window.open("https://wa.me/917754048502?text=Mujhe "+plan+" chahiye","_blank");
 }
 function makeWeb(){
   let n = document.getElementById('nameInput').value;
