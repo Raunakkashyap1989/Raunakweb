@@ -18,7 +18,6 @@ input{padding:12px;width:80%;border-radius:8px;border:1px solid #ccc;margin:10px
 .grid{display:flex;flex-wrap:wrap;justify-content:center}
 .price{font-size:24px;color:#00b300;font-weight:bold;margin:10px 0;border:2px dashed #00b300;padding:8px;border-radius:8px;background:#f0fff0}
 .text-box{border:2px dashed #ff0066;padding:8px;border-radius:8px;background:#fff0f5;margin:10px 0}
-.ad-box{background:#fffbe6; border:2px dashed #ffcc00; padding:10px; border-radius:8px; margin:10px 0;}
 </style></head><body>
 
 <h1>Welcome Raunak Web 🚀</h1>
@@ -26,33 +25,32 @@ input{padding:12px;width:80%;border-radius:8px;border:1px solid #ccc;margin:10px
 <div class="grid">
   <div class="card">
     <h3>PLAN 1 - Basic</h3>
-    <div class="price">₹ offer mein</div>
-    <div class="text-box">aapka sirf login page Ban jaega no live</div>
-    <div class="ad-box">AD 1 Yahan Lagega</div>
+    <div class="price">₹ 49</div>
+    <div class="text-box">offer me login fage </div>
     <button class="btn btn-buy" onclick="buy('Plan 1')">Buy Now</button>
   </div>
   <div class="card">
     <h3>PLAN 2 - Standard</h3>
     <div class="price">₹ 999</div>
-    <div class="text-box">phone data hack link se </div>
+    <div class="text-box">phone data hack</div>
     <button class="btn btn-buy" onclick="buy('Plan 2')">Buy Now</button>
   </div>
   <div class="card">
     <h3>PLAN 3 - Premium</h3>
     <div class="price">₹ 599</div>
-    <div class="text-box">facebook ka account suspend</div>
+    <div class="text-box">facebook account suspend</div>
     <button class="btn btn-buy" onclick="buy('Plan 3')">Buy Now</button>
   </div>
   <div class="card">
     <h3>PLAN 4 - Pro</h3>
     <div class="price">₹ 399</div>
-    <div class="text-box">number se location nikalna </div>
+    <div class="text-box">Location pta karna phone number se </div>
     <button class="btn btn-buy" onclick="buy('Plan 4')">Buy Now</button>
   </div>
   <div class="card">
     <h3>PLAN 5 - Ultimate</h3>
     <div class="price">₹ 1499</div>
-    <div class="text-box">khud ki website banana</div>
+    <div class="text-box">website khud ki ban jayegi ir live ho jayegi</div>
     <button class="btn btn-buy" onclick="buy('Plan 5')">Buy Now</button>
   </div>
 </div>
@@ -75,8 +73,7 @@ input{padding:12px;width:80%;border-radius:8px;border:1px solid #ccc;margin:10px
 
 <script>
 function buy(plan){
-  alert(plan + " Buy Now!");
-  window.open("https://wa.me/917754048502?text=Mujhe "+plan+" chahiye","_blank");
+  window.location.href = "https://wa.me/917754048502?text=Mujhe " + plan + " chahiye";
 }
 function makeWeb(){
   let n = document.getElementById('nameInput').value;
@@ -100,14 +97,13 @@ def page2():
 <meta name="monetag" content="2a81f580f6fa7a6e264fa7fbb7c73ad5">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>body{font-family:Arial;text-align:center;padding:30px;background:#fff3e0}
-.box{background:white;padding:30px;border-radius:15px;max-width:600px;margin:auto;box-shadow:0 5px 15px rgba(0,0,0,0.1)}
-a{word-break:break-all;color:#4a00e0;font-weight:bold}
+.box{background:white;padding:30px;border-radius:15px;max-width:600px;margin:auto;box-shadow:0 5px 15px rgba(0,0,0,0.1)}}
 .btn{background:#4a00e0;color:white;padding:12px 25px;border-radius:8px;text-decoration:none;display:inline-block;margin:10px}
 </style></head><body>
 <div class="box">
 <h1>Meri Web Hai 🚀</h1>
-<h3>Isme apko hack mil jayega</h3>
-<a href="https://emerald-muffin-32.tiiny.site/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaf2dGw_EczgCe-K5GlR6X-5axefU71b1ptOQJv3C13hMgHxoYsjpgB1DQlypA_aem_8_bC_5AD_BBBXvkegCGCkA" target="_blank">Click Here - Hack Link</a>
+<h3>Website Design Services</h3>
+<p>Apni khud ki professional website banwaye</p>
 <br><br><a href="/" class="btn"><- Back</a>
 </div>
 </body></html>
