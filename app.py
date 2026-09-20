@@ -4,7 +4,39 @@ import smtplib
 from email.mime.text import MIMEText
 
 app = Flask(__name__)
+app.secret_key = "raunak_secret_12345"
 
+# LOCK KA CODE START
+PASSWORD = "1989"
+from flask import session, redirect, request
+
+@app.before_request
+def check_lock():
+    if 'logged_in' not in session and request.path != '/login':
+        if request.endpoint != 'login':
+            return redirect('/login')
+
+@app.route('/login', methods=['GET','POST'])
+def login():
+    if request.method == 'POST':
+        if request.form.get('password') == PASSWORD:
+            session['logged_in'] = True
+            return redirect('/')
+        else:
+            return "Galat Password! <a href='/login'>Wapas</a>"
+    return '''
+    <div style="text-align:center;margin-top:100px;font-family:Arial">
+    <h2>🔒 Lock Laga Hai</h2>
+    <form method="POST">
+    <input type="password" name="password" placeholder="Password Dalo (1989)" style="padding:10px">
+    <button type="submit" style="padding:10px 20px;background:#4a00e0;color:white;border:none;border-radius:5px">Unlock</button>
+    </form></div>
+    '''
+
+@app.route('/logout')
+def logout():
+    session.pop('logged_in', None)
+    return redirect('/login')
 HTML_HEADER = """
 <html><head>
 <meta name="monetag" content="2a81f580f6fa7a6e264fa7fbb7c73ad5">
